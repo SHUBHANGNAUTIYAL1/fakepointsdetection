@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 from scipy.interpolate import griddata
-#import open3d as o3d
+import open3d as o3d
 from PIL import Image
 import base64
 
