@@ -25,30 +25,30 @@ def generate_csv_download_link(df, file_name, link_text):
     return href
 
 # Define function to plot scatter points
-# def plot_scatter(dataframe, title):
-#     fig = px.scatter_3d(dataframe, x="X", y="Y", z="Z", title=title)
-#     st.plotly_chart(fig)
-# # Create point cloud data
-#     point_data = dataframe[['X', 'Y', 'Z']].values
+def plot_scatter(dataframe, title):
+    fig = px.scatter_3d(dataframe, x="X", y="Y", z="Z", title=title)
+    st.plotly_chart(fig)
+# Create point cloud data
+    point_data = dataframe[['X', 'Y', 'Z']].values
 
-#     # Create Open3D point cloud geometry
-#     geom = o3d.geometry.PointCloud()
-#     geom.points = o3d.utility.Vector3dVector(point_data)
+    # Create Open3D point cloud geometry
+    geom = o3d.geometry.PointCloud()
+    geom.points = o3d.utility.Vector3dVector(point_data)
 
-#     # Set up a visualization window
-#     vis = o3d.visualization.Visualizer()
-#     vis.create_window(visible=False)
-#     vis.add_geometry(geom)
+    # Set up a visualization window
+    vis = o3d.visualization.Visualizer()
+    vis.create_window(visible=False)
+    vis.add_geometry(geom)
 
-#     # Capture the visualization as an image
-#     vis.poll_events()
-#     vis.update_renderer()
-#     image = vis.capture_screen_float_buffer()
-#     vis.destroy_window()
+    # Capture the visualization as an image
+    vis.poll_events()
+    vis.update_renderer()
+    image = vis.capture_screen_float_buffer()
+    vis.destroy_window()
 
-#     # Convert the image to a PIL Image and display it in Streamlit
-#     pil_image = Image.fromarray((np.asarray(image) * 255).astype(np.uint8))
-#     st.image(pil_image, caption="Point Cloud Visualization")
+    # Convert the image to a PIL Image and display it in Streamlit
+    pil_image = Image.fromarray((np.asarray(image) * 255).astype(np.uint8))
+    st.image(pil_image, caption="Point Cloud Visualization")
 
 
 # Define function to generate fake points helper
