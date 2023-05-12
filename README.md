@@ -10,7 +10,7 @@
  In case of non-dense canopies the normalisation process is smooth because of majority beams hitting the ground resulting in higher density of ground points for normalisation. ​
  But In Case of dense canopies where few beams hits the ground resulting in lower density of ground points thus the normalisation process gets confused and produces weird results .
  
- Our task :-
+ # Our task :-
  
  The completed solution should be an algorithm that input a csv file, Identify void regions (polygon) where density of point cloud is below 500 pts/m2 [ variable ] 
  and save it as a csv. Then fill those void regions using some algorithm so that density > 500 pts/m2 [ variable ] 
