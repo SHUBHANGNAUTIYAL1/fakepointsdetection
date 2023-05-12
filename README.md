@@ -1,4 +1,4 @@
-# fakepointsdetection
+# Fake Points Generation
 
 # Problem Statement
  
