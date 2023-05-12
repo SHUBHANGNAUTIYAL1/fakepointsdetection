@@ -1,5 +1,6 @@
 # fakepointsdetection
- Problem Statement
+
+# Problem Statement
  
  
  Using the Aerial Lidar sensor 3D point cloud data is generated ( refer Fig 1), where each point represents the return of a laser pulse from a reflected surface, be it the ground or any off-terrain objects situated between the sensor and the ground. Common off-terrain objects include trees, crops, infrastructures etc. ​
